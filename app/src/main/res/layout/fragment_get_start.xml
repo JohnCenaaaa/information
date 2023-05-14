@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_purple"
+    tools:context=".getStart">
+
+    <TextView
+        android:id="@+id/getStart_text"
+        android:layout_width="275dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/kavoon"
+        android:text="We Care"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.272"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/getStart_text2"
+        android:layout_width="275dp"
+        android:layout_height="67dp"
+        android:fontFamily="@font/kavoon"
+        android:text="About You"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.816"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/getStart_text" />
+
+    <TextView
+        android:id="@+id/getStart_text3"
+        android:layout_width="271dp"
+        android:layout_height="43dp"
+        android:text="Take care of your body. It's the only place you have to live"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/getStart_button"
+        android:layout_width="226dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="@android:color/holo_blue_bright"
+        android:text="Get Started"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/getStart_text3" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="314dp"
+        android:layout_height="283dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/istockphoto_1183325543_612x612_removebg_preview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/getStart_text2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

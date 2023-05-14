@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/information1_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/information1_text"
+        android:layout_width="411dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginEnd="252dp"
+        android:background="@color/material_dynamic_tertiary60"
+        android:fontFamily="sans-serif-medium"
+        android:text="FitLife"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:flow_horizontalAlign="center"
+        app:flow_verticalAlign="center"
+        app:layout_constraintBottom_toTopOf="@+id/information1_text2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.286"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/information1_text2"
+        android:layout_width="227dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="72dp"
+        android:fontFamily="sans-serif-black"
+        android:text="FitLife"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/information1_text" />
+
+    <ImageView
+        android:id="@+id/information1_logo"
+        android:layout_width="293dp"
+        android:layout_height="223dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/information1_text2"
+        app:srcCompat="@drawable/logo_app" />
+
+    <TextView
+        android:id="@+id/information1_text3"
+        android:layout_width="245dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="112dp"
+        android:text="Provide your information  for better experiences."
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/information1_logo" />
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
